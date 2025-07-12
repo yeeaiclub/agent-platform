@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/BurntSushi/toml/v2"
+	"github.com/BurntSushi/toml"
 )
 
 type AgentConfig struct {
@@ -23,7 +23,7 @@ func LoadConfig(configPath string) (*Config, error) {
 	if configPath == "" {
 		configPath = "./config.toml"
 	}
-	
+
 	// If not found in current directory, try relative to executable
 	if _, err := os.Stat(configPath); os.IsNotExist(err) {
 		execDir, err := os.Executable()
@@ -73,4 +73,4 @@ func (c *Config) GetAgentURLs() []string {
 		urls[i] = agent.URL
 	}
 	return urls
-} 
+}
