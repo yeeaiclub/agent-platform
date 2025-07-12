@@ -1,0 +1,12 @@
+[[agents]]
+name = "air_agent"
+url = "${AIR_AGENT_URL}"
+
+[[agents]]
+name = "weather_agent"
+url = "${WEA_AGENT_URL}"
+
+# Add more agents here as needed
+# [[agents]]
+# name = "custom_agent"
+# url = "${CUSTOM_AGENT_URL}" 
