@@ -1,0 +1,22 @@
+# Agent Platform Configuration
+# Add your agents here with name and URL
+
+[[agents]]
+name = "weather_agent"
+url = "${WEATHER_AGENT_URL}"
+
+[[agents]]
+name = "air_quality_agent"
+url = "${AIR_AGENT_URL}"
+
+[[agents]]
+name = "translation_agent"
+url = "${TRANSLATION_AGENT_URL}"
+
+[[agents]]
+name = "local_agent"
+url = "http://localhost:8081"
+
+[[agents]]
+name = "custom_agent"
+url = "${CUSTOM_AGENT_URL}" 
